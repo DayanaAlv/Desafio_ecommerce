@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+   grid-template-columns: 1fr 4fr;
+   grid-template-rows: 2fr 3fr 2fr;
+   grid-template-areas: 
+   "header header "
+    "aside main"
+    "footer footer ";
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    grid-area: header;
+   background-color:  rgb(186, 181, 183);
+}
+header h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+   
+}
+
+aside {
+    grid-area: aside;
+    background-color: white;
+}
+aside h4{
+    text-align: center;
+
+}
+aside ul {
+    text-align: center;
+}
+main {
+    grid-area: main;
+   background-image: url(../img/fondo3.png);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: white;
+    margin: 10px;
+   border-radius: 6px;
+  cursor: default;
+   
+
+   
+  
+
+}
+.card img {
+    height: 50%;
+    width: 70%;
+}
+.card a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: rgb(128, 28, 75);
+    border: 1px solid  rgb(126, 9, 52);
+    border-radius: 4px;
+   
+}
+.card a:hover{
+    background-color: antiquewhite;
+    color: rgb(126, 9, 52);
+}
+footer {
+    grid-area:footer; 
+    background-color:  rgb(186, 181, 183);
+}
+footer P {
+    text-align: center;
+}
